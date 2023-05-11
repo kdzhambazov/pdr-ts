@@ -1,0 +1,29 @@
+.CategoryCard {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 140px;
+  border-radius: 24px;
+  margin: 8px 0;
+}
+
+.CategoryCard__image {
+  height: 100%;
+  width: 100%;
+  border-radius: 24px;
+
+  object-fit: cover;
+
+  /* Add the blur effect */
+  filter: grayscale(25%);
+  -webkit-filter: grayscale(25%);
+}
+
+.CategoryCard__name {
+  position: absolute;
+  font-size: 1.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: white;
+}
