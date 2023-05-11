@@ -3,6 +3,7 @@ import "./styles.css";
 
 export type Product = {
   id: string;
+  categoryId: string;
   name: string;
   description: string;
   cost: number;
