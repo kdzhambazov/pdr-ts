@@ -7,8 +7,6 @@ import "./styles.css";
 
 const HomePage = () => {
   const [searchList, setSearchList] = useState<Product[] | []>([]);
-  const handleAddProduct = (product: Product) => {};
-  const handleRemoveProduct = (product: Product) => {};
 
   const filtersearchListOfCategories = (keyword: string) => {
     if (!keyword) {
@@ -35,8 +33,6 @@ const HomePage = () => {
               <ProductCard
                 key={product.id}
                 product={product}
-                handleAddProduct={handleAddProduct}
-                handleRemoveProduct={handleRemoveProduct}
               />
             ))}
       </div>

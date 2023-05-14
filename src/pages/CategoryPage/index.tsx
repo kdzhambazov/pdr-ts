@@ -7,8 +7,6 @@ import { products } from "../../mocks";
 
 const CategoryPage = () => {
   const { categoryId } = useParams();
-  const handleAddProduct = (product: Product) => {};
-  const handleRemoveProduct = (product: Product) => {};
 
   const categoryProducts = products.filter(
     (product: Product) => product.categoryId === categoryId
@@ -22,8 +20,6 @@ const CategoryPage = () => {
             <ProductCard
               key={product.id}
               product={product}
-              handleAddProduct={handleAddProduct}
-              handleRemoveProduct={handleRemoveProduct}
             />
           ))}
       </div>

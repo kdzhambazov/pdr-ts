@@ -4,11 +4,10 @@ import { Product } from "../ProductCard";
 import "./styles.css";
 
 type Props = {
-  products: Product[];
+  productsCount: number;
 };
 
-export const BasketToolbar = ({ products }: Props) => {
-  const productsCount = products.length;
+export const BasketToolbar = ({ productsCount }: Props) => {
   const navigate = useNavigate();
   const handleCheckout = () => {
     navigate("../order");
