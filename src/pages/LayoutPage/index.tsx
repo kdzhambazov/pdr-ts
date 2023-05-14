@@ -1,6 +1,7 @@
 import React from "react";
 import { Outlet } from "react-router-dom";
-import { GlobalHeader } from "../../components/GlobalHeader";
+import BasketToolbar from "../../components/BasketToolbar";
+import GlobalHeader from "../../components/GlobalHeader";
 import "./styles.css";
 
 const LayoutPage = () => {
@@ -11,6 +12,7 @@ const LayoutPage = () => {
         <div className="content" >
           <Outlet />
         </div>
+        <BasketToolbar products={[]} />
       </div>
     </>
   );

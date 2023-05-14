@@ -1,0 +1,14 @@
+.BasketToolbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 54px;
+  background-color: #f5deb3;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  border-top-left-radius: 24px;
+  border-top-right-radius: 24px;
+}
